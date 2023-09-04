@@ -1,0 +1,91 @@
+@use "../abstracts";
+.hero {
+  &-container {
+    padding: 151px 0 140px;
+    width: 1142px;
+  }
+  &-content {
+    text-align: center;
+    position: relative;
+  }
+  &-heading {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 116.667%;
+    max-width: 783px;
+    margin: 0 auto;
+    strong {
+      border: 1px dashed #fff;
+      position: relative;
+      margin-right: 4px;
+    }
+    &-decor {
+      width: 10px;
+      height: 9px;
+      position: absolute;
+    }
+    &-decor-1 {
+      border-radius: 4.5px 4.5px 0 4.5px;
+      background: #ae8ff9;
+      top: -9px;
+      left: -10px;
+    }
+    &-decor-2 {
+      border-radius: 4.5px 4.5px 4.5px 0px;
+      background: #ef8f00;
+      top: -9px;
+      right: -10px;
+    }
+    &-decor-3 {
+      border-radius: 4.5px 0 4.5px 4.5px;
+      background: #ff7667;
+      bottom: -9px;
+      left: -10px;
+    }
+    &-decor-4 {
+      border-radius: 0 4.5px 4.5px 4.5px;
+      background: #0cce84;
+      bottom: -9px;
+      right: -10px;
+    }
+  }
+  &-desc {
+    margin: 34px auto 0 auto;
+    max-width: 447px;
+  }
+  &-cta {
+    @include abstracts.flexCenter;
+    margin-top: 44px;
+    gap: 0 20px;
+  }
+  &-request-btn {
+    min-width: 199px;
+  }
+  &-contact-btn {
+    min-width: 199px;
+    color: abstracts.$text-light-color;
+    background: #282c30;
+    box-shadow: 1px 8px 45px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #282c30;
+    transition: all 0.2s linear;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &-decor {
+    img {
+      position: absolute;
+      top: -62px;
+      &:first-child {
+        left: -31px;
+      }
+      &:last-child {
+        right: -31px;
+      }
+    }
+  }
+  &-media {
+    @include abstracts.flexCenter;
+    margin-top: 111px;
+  }
+}

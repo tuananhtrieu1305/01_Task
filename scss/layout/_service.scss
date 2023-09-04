@@ -1,0 +1,36 @@
+@use "../abstracts";
+.service {
+  &-container {
+    padding: 71px 50px 53px;
+    border-radius: 27px;
+    background: #282c30;
+    position: relative;
+  }
+  &-list {
+    @include abstracts.grid(3, 142px);
+  }
+  &-item {
+    @include abstracts.flexCenter;
+    flex-direction: column;
+  }
+  &-heading {
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+  &-desc {
+    margin-top: 5px;
+    text-align: center;
+  }
+  &-decor {
+    img {
+      position: absolute;
+      top: 102px;
+      &:first-child {
+        left: 259px;
+      }
+      &:last-child {
+        right: 259px;
+      }
+    }
+  }
+}
