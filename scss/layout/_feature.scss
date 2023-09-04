@@ -1,0 +1,72 @@
+@use "../abstracts";
+.feature {
+  margin-top: 70px;
+  background: #191b1d;
+  &-container {
+    width: 1162px;
+    padding: 136px 0 81px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 75px;
+  }
+  &-content {
+    margin-top: -65px;
+  }
+  &-heading {
+    max-width: 400px;
+    line-height: 125%;
+  }
+  &-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 26px 22px;
+    .feature-item {
+      &:first-child {
+        figure {
+          background-color: #0cce84;
+        }
+      }
+      &:nth-child(2) {
+        figure {
+          background-color: #ef8f00;
+        }
+      }
+      &:nth-child(3) {
+        figure {
+          background-color: #ae8ff9;
+        }
+      }
+      &:last-child {
+        figure {
+          background-color: #ff7667;
+        }
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    gap: 0 23px;
+    figure {
+      @include abstracts.flexCenter;
+      width: 20px;
+      height: 19px;
+      border-radius: 7px;
+      margin-top: 4px;
+    }
+    &-content {
+      h3 {
+        font-size: 1.8rem;
+        line-height: 155.556%;
+        white-space: nowrap;
+      }
+      p {
+        margin-top: 8px;
+        font-size: 1.4rem;
+        line-height: 171.429%;
+        max-width: 176px;
+      }
+    }
+  }
+}

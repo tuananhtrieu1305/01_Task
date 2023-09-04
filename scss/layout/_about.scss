@@ -1,0 +1,33 @@
+@use "../abstracts";
+.about {
+  margin-top: 70px;
+  &-container {
+    padding: 70px 0;
+  }
+  &-heading {
+    max-width: 497px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &-desc {
+    @extend .about-heading;
+    margin-top: 30px;
+    max-width: 747px;
+  }
+  &-list {
+    margin-top: 44px;
+    @include abstracts.flexCenter;
+    gap: 0 17px;
+  }
+  &-item {
+    width: 169px;
+    height: 46px;
+    border-radius: 23px;
+    background: #282c30;
+    @include abstracts.flexCenter;
+    gap: 0 18px;
+  }
+  &-media {
+    margin-top: 75px;
+  }
+}
