@@ -1,0 +1,87 @@
+@use "../abstracts";
+.footer {
+  margin-top: 82.5px;
+  &-container {
+    padding: 67px 0 148px;
+  }
+  &-top {
+    padding: 0 58px 37px 22px;
+    border-bottom: 1px solid abstracts.$dark-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-cta {
+    display: flex;
+    align-items: center;
+    gap: 0 54px;
+    span {
+      font-size: 2.2rem;
+    }
+  }
+  &-btn {
+    min-width: 165px;
+    --height: 55px;
+  }
+  &-bottom {
+    margin-top: 70px;
+    padding-right: 135px;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-gap: 90px;
+  }
+  &-links {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px 0;
+  }
+  &-link {
+    white-space: nowrap;
+  }
+  &-heading {
+    font-size: 2.2rem;
+  }
+  &-form {
+    margin-top: 44px;
+    position: relative;
+    button {
+      width: 38px;
+      height: 38px;
+      border-radius: 100rem;
+      background: abstracts.$linear-color;
+      @include abstracts.flexCenter;
+      outline: none;
+      border: 1px solid inherit;
+      position: absolute;
+      right: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      svg {
+        color: abstracts.$text-light-color;
+      }
+    }
+  }
+  &-input {
+    width: 100%;
+    outline: none;
+    border-radius: 26px;
+    border: 1px solid var(--text-color-dark-blue, #272633);
+    padding: 11px 50px 11px 25px;
+    font-size: 1.4rem;
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 0 18px;
+    margin-top: 45px;
+    .social {
+      width: 38px;
+      height: 38px;
+      border-radius: 100rem;
+      background-color: abstracts.$dark-color;
+      @include abstracts.flexCenter;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@use "../abstracts";
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+.review {
+  &-container {
+    padding: 70px 0 82.5px;
+    width: 1219px;
+    position: relative;
+  }
+  &-list {
+    @include abstracts.grid(3, 32px);
+  }
+  &-item {
+    width: 385px;
+    border-radius: 10px;
+    border: 1px solid #282c30;
+    background: abstracts.$primary-bg;
+    padding: 29px 40px 27px;
+    transition: all 0.2s linear;
+    &:hover {
+      background: #282c30;
+      svg {
+        animation: rotate 0.2s forwards;
+        color: #0cce84;
+      }
+    }
+    svg {
+      margin-left: 215px;
+      color: #282c30;
+    }
+  }
+  &-desc {
+    margin-top: 27px;
+    font-size: 1.6rem;
+    line-height: 162.5%;
+  }
+  &-user {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 0 52px;
+    &-info {
+      display: flex;
+      gap: 0 20px;
+    }
+    &-icon {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 100rem;
+    }
+    &-name {
+      font-size: 1.8rem;
+    }
+    &-position {
+      font-size: 1.6rem;
+    }
+  }
+  &-rate {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+  }
+  .arrows {
+    display: flex;
+    align-items: center;
+    gap: 0 43px;
+    position: absolute;
+    bottom: 0;
+    right: 61px;
+    svg {
+      color: abstracts.$text-color;
+      cursor: pointer;
+      :hover {
+        color: #ef8f00;
+      }
+    }
+  }
+}

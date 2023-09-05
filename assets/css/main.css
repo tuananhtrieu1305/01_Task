@@ -813,4 +813,190 @@ a {
   color: #ef8f00;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+.review-container {
+  padding: 70px 0 82.5px;
+  width: 1219px;
+  position: relative;
+}
+.review-list {
+  --column: 3;
+  --spacing: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--spacing);
+  margin-left: calc(-1 * var(--spacing));
+}
+.review-list > * {
+  margin-left: var(--spacing);
+  width: calc(100% / var(--column) - var(--spacing));
+}
+.review-item {
+  width: 385px;
+  border-radius: 10px;
+  border: 1px solid #282c30;
+  background: #131517;
+  padding: 29px 40px 27px;
+  transition: all 0.2s linear;
+}
+.review-item:hover {
+  background: #282c30;
+}
+.review-item:hover svg {
+  animation: rotate 0.2s forwards;
+  color: #0cce84;
+}
+.review-item svg {
+  margin-left: 215px;
+  color: #282c30;
+}
+.review-desc {
+  margin-top: 27px;
+  font-size: 1.6rem;
+  line-height: 162.5%;
+}
+.review-user {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 0 52px;
+}
+.review-user-info {
+  display: flex;
+  gap: 0 20px;
+}
+.review-user-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 100rem;
+}
+.review-user-name {
+  font-size: 1.8rem;
+}
+.review-user-position {
+  font-size: 1.6rem;
+}
+.review-rate {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.review .arrows {
+  display: flex;
+  align-items: center;
+  gap: 0 43px;
+  position: absolute;
+  bottom: 0;
+  right: 61px;
+}
+.review .arrows svg {
+  color: #858b93;
+  cursor: pointer;
+}
+.review .arrows svg :hover {
+  color: #ef8f00;
+}
+
+.footer {
+  margin-top: 82.5px;
+}
+.footer-container {
+  padding: 67px 0 148px;
+}
+.footer-top {
+  padding: 0 58px 37px 22px;
+  border-bottom: 1px solid #272633;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-cta {
+  display: flex;
+  align-items: center;
+  gap: 0 54px;
+}
+.footer-cta span {
+  font-size: 2.2rem;
+}
+.footer-btn {
+  min-width: 165px;
+  --height: 55px;
+}
+.footer-bottom {
+  margin-top: 70px;
+  padding-right: 135px;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  grid-gap: 90px;
+}
+.footer-links {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px 0;
+}
+.footer-link {
+  white-space: nowrap;
+}
+.footer-heading {
+  font-size: 2.2rem;
+}
+.footer-form {
+  margin-top: 44px;
+  position: relative;
+}
+.footer-form button {
+  width: 38px;
+  height: 38px;
+  border-radius: 100rem;
+  background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: 1px solid inherit;
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer-form button svg {
+  color: #f9f9f9;
+}
+.footer-input {
+  width: 100%;
+  outline: none;
+  border-radius: 26px;
+  border: 1px solid var(--text-color-dark-blue, #272633);
+  padding: 11px 50px 11px 25px;
+  font-size: 1.4rem;
+}
+.footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 0 18px;
+  margin-top: 45px;
+}
+.footer .socials .social {
+  width: 38px;
+  height: 38px;
+  border-radius: 100rem;
+  background-color: #272633;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=main.css.map */
