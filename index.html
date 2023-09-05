@@ -92,6 +92,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
+    <!-- PC Header -->
     <header class="header">
       <div class="container header-container">
         <a href="#">
@@ -123,6 +124,47 @@
           </ul>
         </nav>
         <button class="btn btn-1 sign-in-btn">Sign In</button>
+        <label for="menu-checkbox" class="header-menu-mobile">
+          <img src="./assets/img/menu.svg" alt="" />
+        </label>
+      </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox" class="overlay"></label>
+      <div class="menu-drawer">
+        <nav class="header-nav mobile-header-nav">
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="#" class="desc header-menu-link" title="Home">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#product" class="desc header-menu-link" title="Products"
+                >Products</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a
+                href="#guidelines"
+                class="desc header-menu-link"
+                title="Guidelines"
+                >Guidelines</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="#review" class="desc header-menu-link" title="Review"
+                >Review</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -536,6 +578,7 @@
       </section>
       <section id="review" class="review">
         <div class="container review-container">
+          <h2 class="heading review-heading"><span>Test</span>monials</h2>
           <div class="review-list">
             <article class="review-item">
               <svg
@@ -659,6 +702,11 @@
             </article>
           </div>
           <div class="arrows">
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot active"></div>
+              <div class="dot"></div>
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="8"
@@ -785,6 +833,92 @@
                 <a href="#!" class="footer-link desc">Contact Us</a>
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="footer-mobile">
+          <input
+            type="checkbox"
+            name="footer-menu"
+            id="footer-menu"
+            class="footer-menu"
+            hidden
+          />
+          <div class="footer-row">
+            <img src="./assets/img/logo.svg" alt="Task" />
+            <form action="#!" class="footer-form footer-form-mobile">
+              <input
+                type="email"
+                class="footer-input desc"
+                placeholder="Your Email Address"
+              />
+              <button type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="13"
+                  viewBox="0 0 8 13"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L6.5 6.5L1 12"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+            <label for="footer-menu" class="footer-menu">
+              <img src="./assets/img/menu.svg" alt="" />
+            </label>
+          </div>
+          <div class="footer-drawer">
+            <div class="footer-column">
+              <h3 class="footer-heading heading">Services</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="#!" class="footer-link desc">Email Marketing</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer-link desc">Campaigns</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer-link desc">Branding</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer-link desc">Online</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading heading">About</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="#!" class="footer-link desc">Our Story</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer-link desc">Benefits</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer-link desc">Team</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer-link desc">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading heading">Help</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="#!" class="footer-link desc">FAQs</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer-link desc">Contact Us</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -33,4 +33,42 @@
       }
     }
   }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    &-list {
+      --column: 2;
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    margin-top: 40px;
+    &-container {
+      padding: 56px 57px 127px 54px;
+    }
+    &-list {
+      --column: 1;
+      --spacing: 56px;
+    }
+    &-heading {
+      font-size: 2rem;
+    }
+    &-desc {
+      margin-top: 11px;
+      font-size: 1.6rem;
+    }
+    &-decor {
+      img {
+        &:first-child {
+          top: 280px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &:last-child {
+          left: 50%;
+          transform: translateX(-50%);
+          top: 548px;
+        }
+      }
+    }
+  }
 }

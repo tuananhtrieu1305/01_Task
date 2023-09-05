@@ -30,4 +30,39 @@
   &-media {
     margin-top: 75px;
   }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    &-list {
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      padding: 40px 0 23px;
+    }
+    &-heading {
+      max-width: 268px;
+      line-height: 133.333%;
+    }
+    &-desc {
+      @extend .about-heading;
+      line-height: 233.333%;
+    }
+    &-list {
+      margin-top: 40px;
+      flex-direction: column;
+      gap: 26px 0;
+    }
+    &-item {
+      span {
+        font-size: 1.4rem;
+        color: #a4b3be;
+      }
+    }
+    &-media {
+      margin-top: 32px;
+    }
+  }
 }

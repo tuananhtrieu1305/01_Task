@@ -55,4 +55,51 @@
       text-align: center;
     }
   }
+  // Tablet & Mobile
+  @media screen and (max-width: 991.98px) {
+    &-container {
+      flex-direction: column;
+      gap: 80px 0;
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    margin-top: 40px;
+    &-container {
+      padding: 40px 0;
+    }
+    &-content {
+      max-width: 296px;
+    }
+    &-heading {
+      max-width: 279px;
+    }
+    &-list {
+      margin-top: 37px;
+      .task-item:first-child {
+        margin-left: 23px;
+      }
+      .task-item:nth-child(3) {
+        position: relative;
+        right: 16px;
+        z-index: -1;
+      }
+    }
+    &-item {
+      width: 104px;
+      height: 98px;
+      padding: 15px 18px 8px;
+      flex-shrink: 0;
+      &.active {
+        margin: 56px 0 0 -18px;
+      }
+      &-heading {
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+    }
+    .dots {
+      display: none;
+    }
+  }
 }

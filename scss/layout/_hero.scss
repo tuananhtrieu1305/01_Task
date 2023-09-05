@@ -88,4 +88,50 @@
     @include abstracts.flexCenter;
     margin-top: 111px;
   }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    &-decor {
+      display: none;
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      padding: 57px 0 40px;
+    }
+    &-heading {
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: normal;
+    }
+    &-desc {
+      display: none;
+    }
+    &-cta {
+      margin-top: 30px;
+      flex-direction: column;
+      gap: 18px 0;
+      .btn {
+        min-width: 143px;
+      }
+    }
+    &-decor {
+      img {
+        width: 8%;
+        &:first-child {
+          top: -62px;
+          left: 60px;
+          transform: rotate(-90deg);
+        }
+        &:last-child {
+          top: 94px;
+          right: 24px;
+        }
+      }
+    }
+    &-media {
+      margin-top: 82px;
+    }
+  }
 }

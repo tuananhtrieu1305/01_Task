@@ -46,4 +46,85 @@
     min-width: 110px;
     margin-left: auto;
   }
+  // PC
+  @media screen and (min-width: 992px) {
+    &-menu-mobile {
+      display: none;
+    }
+  }
+  // Tablet & Mobile
+  @media screen and (max-width: 991.98px) {
+    &-nav {
+      display: none;
+    }
+    &-menu {
+      margin-left: 0;
+      flex-direction: column;
+      gap: 10px 0;
+      align-items: flex-start;
+    }
+    &-menu-link {
+      padding: 0;
+    }
+    .sign-in-btn {
+      margin-right: 44px;
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    .sign-in-btn {
+      --height: 30px;
+      min-width: 80px;
+      border-radius: 6px;
+    }
+  }
+}
+.mobile-header {
+  // PC
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+  // Tablet & Mobile
+  @media screen and (max-width: 991.98px) {
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 3;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.2s linear;
+    }
+    .menu-drawer {
+      position: fixed;
+      inset: 0 40% 0 0;
+      background-color: #fff;
+      z-index: 4;
+      transform: translateX(-100%);
+      transition: all 0.2s linear;
+    }
+    .menu-checkbox:checked ~ .overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+    .menu-checkbox:checked ~ .menu-drawer {
+      transform: translateX(0);
+    }
+    &-nav {
+      display: block;
+    }
+  }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .menu-drawer {
+      padding: 40px;
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    .menu-drawer {
+      inset: 0 20% 0 0;
+      padding: 20px;
+    }
+  }
 }
